@@ -1,7 +1,7 @@
 {
   "name": "geteventstore-range",
   "version": "0.1.1",
-  "description": "A small library to help you retrieve a range of events from EventStore streams",
+  "description": "A small geteventstore-promise extension to retrieve events ranges from EventStore",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/tests.js"

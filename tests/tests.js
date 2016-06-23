@@ -1,17 +1,16 @@
 var should = require('should');
 var eventstore = require('geteventstore-promise');
+var EventStoreRange = require('../index.js');
 
 var streamToken = 'TestStream-' + new Date().getTime();
 var client = eventstore.tcp({
     hostname: process.env.EVENTSTORE_HOST || 'localhost',
     port: process.env.EVENTSTORE_PORT || 1113,
     credentials: {
-        username: process.env.EVENTSTORE_PORT || 'admin',
-        password: process.env.EVENTSTORE_PORT || 'changeit'
+        username: process.env.EVENTSTORE_USER || 'admin',
+        password: process.env.EVENTSTORE_PASS || 'changeit'
     }
 });
-
-var EventStoreRange = require('../index.js');
 
 before(function(done){
   this.timeout(10000);
