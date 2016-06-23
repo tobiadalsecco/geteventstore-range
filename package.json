@@ -1,0 +1,29 @@
+{
+  "name": "geteventstore-range",
+  "version": "0.1.0",
+  "description": "A small library to help you retrieve a range of events from EventStore streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiadalsecco/geteventstore-range.git"
+  },
+  "keywords": [
+    "eventstore",
+    "getevenstore",
+    "range",
+    "streams"
+  ],
+  "author": "Tobia Dalsecco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobiadalsecco/geteventstore-range/issues"
+  },
+  "homepage": "https://github.com/tobiadalsecco/geteventstore-range#readme",
+  "devDependencies": {
+    "geteventstore-promise": "^1.1.8",
+    "should": "^8.3.0"
+  }
+}
